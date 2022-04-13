@@ -1,0 +1,20 @@
+<% layout('layouts/boilerplate')%>
+    <h1 class="text-center">Login</h1>
+    <form action="/login" class="needs-validation" method="POST" novalidate>
+        <div class="mb-3 col-sm-6 mx-auto">
+            <label class="form-label" for="username">Username</label>
+            <input class="form-control" type="text" id="username" name="username" required>
+        </div>
+        <div class="mb-3 col-sm-6 mx-auto">
+            <label class="form-label" for="password">Password</label>
+            <input class="form-control" type="password" id="password" name="password" required>
+        </div>
+        <div class="w-100 text-center">
+            <button class="btn" style="background-color: rgb(101, 253, 182);">Login</button>
+        </div>
+        <div class="w-100 text-center py-3">
+            <a class="btn" style="background-color: rgb(255, 92, 127); font-weight: 500;" href="/register">Not
+                registered?
+                sign up here</a>
+        </div>
+    </form>

@@ -1,0 +1,16 @@
+<% layout('layouts/boilerplate.ejs') %>
+    <div class="main d-flex justify-content-center">
+        <div class="alert alert-danger" style="max-width: 80%;" role="alert">
+            <h4 class="alert-heading" style="text-align: center;">Error Status code <%= err.statusCode %>
+            </h4>
+            <p style="text-align: center;">
+                <%= err.message %>
+            </p>
+            <hr>
+            <% if (process.env.NODE_ENV !== "production") { %>
+            <p class="mb-0">
+                <%= err.stack %>
+            </p>
+            <% } %> 
+        </div>
+    </div>
